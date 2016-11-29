@@ -29,11 +29,20 @@
 div.region.bottom.bar .MMM-Clash-Royale ul.cards  {
     display: table;
     width: 100%;
+    
+    margin: 0px;
+    padding: 0px;
+
+    display: -webkit-flex;
+    -webkit-flex-direction: row;
+
+    display: flex;
+    flex-direction: row;
 }
 div.region.bottom.bar .MMM-Clash-Royale ul.cards li {
-    display: table-cell;
+    flex-grow: 1;
     text-align: center;
-        vertical-align: bottom;
+    vertical-align: bottom;
 }
 div.region.bottom.bar .MMM-Clash-Royale ul.cards li img {
     width: 90%;
