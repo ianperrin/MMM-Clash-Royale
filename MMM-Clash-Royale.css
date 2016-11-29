@@ -1,0 +1,64 @@
+/* common styles */
+.MMM-Clash-Royale .grayscale {
+    -webkit-filter: grayscale(100%);
+}
+.MMM-Clash-Royale ul.cards  {
+    list-style: none;
+    padding: 0;
+}
+
+/* Elixir Cost badges */
+.MMM-Clash-Royale ul.cards li div.image[data-badge]{
+    position:relative;
+}
+.MMM-Clash-Royale ul.cards li div.image[data-badge]:after {
+   content: attr(data-badge);
+   position: absolute;
+   top: 12%;
+   left: 17%;
+   font-size:1.3vw;
+   color:white;
+   width:10%;
+   height:8%;
+   text-align: center;
+   line-height: 2vw;
+}
+
+
+/* Display cards horizontally if position is bottom_bar */
+div.region.bottom.bar .MMM-Clash-Royale ul.cards  {
+    display: table;
+    width: 100%;
+}
+div.region.bottom.bar .MMM-Clash-Royale ul.cards li {
+    display: table-cell;
+    text-align: center;
+        vertical-align: bottom;
+}
+div.region.bottom.bar .MMM-Clash-Royale ul.cards li img {
+    width: 90%;
+}
+
+
+/* right or left positions */
+
+div.region.top.left .MMM-Clash-Royale ul.cards,
+div.region.top.right .MMM-Clash-Royale ul.cards {
+    max-width: 200px;
+    margin: 0;
+    padding: 0;
+}
+
+div.region.top.left .MMM-Clash-Royale ul.cards li,
+div.region.top.right .MMM-Clash-Royale ul.cards li{
+    display: inline-block;
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    text-align: center;
+}
+div.region.top.left .MMM-Clash-Royale ul.cards li img,
+div.region.top.right .MMM-Clash-Royale ul.cards li img {
+    width: 90%;
+}
